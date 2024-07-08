@@ -21,6 +21,8 @@ export function getRatedTarget(contest: Contest): RatedTarget {
   if (AGC_001_START > contest.start_epoch_second) {
     return RatedTargetType.Unrated;
   }
+
+  console.log(contest.rate_change);
   switch (contest.rate_change) {
     case undefined:
       return RatedTargetType.Unrated;
