@@ -23,6 +23,7 @@ export function getRatedTarget(contest: Contest): RatedTarget {
   }
 
   console.log(contest.rate_change);
+  console.log("New branch ratinig field");
   switch (contest.rate_change) {
     case undefined:
       return RatedTargetType.Unrated;
